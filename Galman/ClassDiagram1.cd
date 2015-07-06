@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="fungal.Ctelefono">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="fungal.CLocal">
+    <Position X="4.5" Y="3" Width="1.5" />
+    <TypeIdentifier />
+    <Members>
+      <Method Name="Finalize" Hidden="true" />
+      <Method Name="guardar" Hidden="true" />
+      <Method Name="guardar_loccontrato" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="fungal.BaseDato" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="2.356" />
+        <Point X="3.5" Y="2.625" />
+        <Point X="4.377" Y="2.625" />
+        <Point X="4.377" Y="4.375" />
+        <Point X="4.5" Y="4.375" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="fungal.BaseDato">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="fungal.CPNatural">
+    <Position X="0.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier />
+    <InheritanceLine Type="fungal.BaseDato" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="2.356" />
+        <Point X="3.5" Y="2.625" />
+        <Point X="2.408" Y="2.625" />
+        <Point X="2.408" Y="8.069" />
+        <Point X="2" Y="8.069" />
+        <Point X="2" Y="8.062" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="fungal.Ccroluz">
+    <Position X="2.75" Y="3" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="galman.Ccontrato">
+    <Position X="2.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>capa de formularios\Cronogramas\Ccontrato.vb</FileName>
+      <HashCode>IEQAgAAAAQCEEAICABgAAAABEAMEAAAgKCCAhBAAAQg=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="fungal.BaseDato" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="2.356" />
+        <Point X="3.5" Y="2.625" />
+        <Point X="2.418" Y="2.625" />
+        <Point X="2.418" Y="8.062" />
+        <Point X="2.75" Y="8.062" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="galman.CPJuridica">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>capa de formularios\Cronogramas\CPJuridica.vb</FileName>
+      <HashCode>QAAAAAAAAQAAADAAACBAAAABAACAAAAAAAJAAgAAAAQ=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="fungal.BaseDato" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="2.356" />
+        <Point X="3.5" Y="2.625" />
+        <Point X="2.408" Y="2.625" />
+        <Point X="2.408" Y="5.125" />
+        <Point X="2" Y="5.125" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="galman.Ceditor">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>capa de formularios\Cronogramas\editores.vb</FileName>
+      <HashCode>AAAAAAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="galman.Editor_cloccontrato">
+    <Position X="8.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>capa de formularios\Cronogramas\editores.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="galman.Ceditor" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="1.93" />
+        <Point X="8.25" Y="4.156" />
+        <Point X="8.5" Y="4.156" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="galman.editor_cpernatural">
+    <Position X="8.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>capa de formularios\Cronogramas\editores.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="galman.Ceditor" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="1.931" />
+        <Point X="8.25" Y="2.812" />
+        <Point X="8.5" Y="2.812" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="galman.editor_cperjuridica">
+    <Position X="8.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>capa de formularios\Cronogramas\editores.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="galman.Ceditor" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="1.931" />
+        <Point X="8.25" Y="5.406" />
+        <Point X="8.5" Y="5.406" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="galman.editor_selcarpeta">
+    <Position X="8.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>capa de formularios\Cronogramas\editores.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="galman.Ceditor" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="1.931" />
+        <Point X="8.25" Y="6.562" />
+        <Point X="8.5" Y="6.562" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="fungal.Cword">
+    <Position X="10.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="fungal.print_conarrendamiento_natural">
+    <Position X="10.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier />
+    <InheritanceLine Type="fungal.Cword" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.188" Y="6.152" />
+        <Point X="11.188" Y="6.326" />
+        <Point X="11.188" Y="6.326" />
+        <Point X="11.188" Y="6.5" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="fungal.registro">
+    <Position X="10.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="fungal.Ccompra">
+    <Position X="4.5" Y="7" Width="1.5" />
+    <TypeIdentifier />
+    <Members>
+      <Method Name="guardar" Hidden="true" />
+      <Method Name="imprimir" Hidden="true" />
+      <Method Name="validar" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="fungal.BaseDato" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="2.356" />
+        <Point X="3.5" Y="2.625" />
+        <Point X="4.377" Y="2.625" />
+        <Point X="4.377" Y="7.803" />
+        <Point X="4.5" Y="7.803" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="galman.frm_loccontrato">
+    <Position X="6.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>capa de formularios\editores\frm_loccontrato.vb</FileName>
+      <HashCode>CQiAAAAEgCAAAIAEgADGAABLAA0AEgAQIUAJAACCCAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="fungal.ETelefono">
+    <Position X="5.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="fungal.Etipo_local">
+    <Position X="2.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="fungal.ETipoDoc">
+    <Position X="7.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="fungal.Eprocedimiento">
+    <Position X="4" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="fungal.Eproc_contrato">
+    <Position X="0.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="fungal.Edecision">
+    <Position X="7.5" Y="14" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="fungal.Eestadolocal">
+    <Position X="0.5" Y="14" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="fungal.Etipo_comprobante">
+    <Position X="4" Y="14.25" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="fungal.Eestado_contrato">
+    <Position X="2.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="fungal.Ereporte">
+    <Position X="9.25" Y="14" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="fungal.Eempleado_planilla">
+    <Position X="5.75" Y="14" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="fungal.Eregistro">
+    <Position X="9.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Module Name="fungal.general">
+    <Position X="8.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier />
+  </Module>
+</ClassDiagram>

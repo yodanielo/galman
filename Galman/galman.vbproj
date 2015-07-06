@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C6D3DB89-72F1-4134-BCA2-1FF6799DC268}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>galman.My.MyApplication</StartupObject>
+    <RootNamespace>galman</RootNamespace>
+    <AssemblyName>Galman</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ApplicationIcon>Resources\logo_galman.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Galman.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DocumentationFile>Galman.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="apariencia" />
+    <Import Include="fungal" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="capa de formularios\ayuda\frm_acercade.Designer.vb">
+      <DependentUpon>frm_acercade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="capa de formularios\ayuda\frm_acercade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capa de formularios\Cronogramas\Ccontrato.vb" />
+    <Compile Include="capa de formularios\Cronogramas\CPJuridica.vb" />
+    <Compile Include="capa de formularios\Cronogramas\editores.vb" />
+    <Compile Include="capa de formularios\Cronogramas\frm_croeneelectrica.Designer.vb">
+      <DependentUpon>frm_croeneelectrica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="capa de formularios\Cronogramas\frm_croeneelectrica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capa de formularios\Cronogramas\frm_cromantenimiento.Designer.vb">
+      <DependentUpon>frm_cromantenimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="capa de formularios\Cronogramas\frm_cromantenimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capa de formularios\Cronogramas\frm_cromerconductiva.Designer.vb">
+      <DependentUpon>frm_cromerconductiva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="capa de formularios\Cronogramas\frm_cromerconductiva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capa de formularios\editores\frm_loccontrato.Designer.vb">
+      <DependentUpon>frm_loccontrato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="capa de formularios\editores\frm_loccontrato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capa de formularios\egresos\frm_compras.Designer.vb">
+      <DependentUpon>frm_compras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="capa de formularios\egresos\frm_compras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capa de formularios\egresos\frm_entregaokanito.Designer.vb">
+      <DependentUpon>frm_entregaokanito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="capa de formularios\egresos\frm_entregaokanito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capa de formularios\egresos\frm_servicio.Designer.vb">
+      <DependentUpon>frm_servicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="capa de formularios\egresos\frm_servicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capa de formularios\egresos\frm_tributos.Designer.vb">
+      <DependentUpon>frm_tributos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="capa de formularios\egresos\frm_tributos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capa de formularios\Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="capa de formularios\Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capa de formularios\egresos\frm_contratista.Designer.vb">
+      <DependentUpon>frm_contratista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="capa de formularios\egresos\frm_contratista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capa de formularios\frm_inicio.Designer.vb">
+      <DependentUpon>frm_inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="capa de formularios\frm_inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capa de formularios\frm_interfecha.Designer.vb">
+      <DependentUpon>frm_interfecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="capa de formularios\frm_interfecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capa de formularios\frm_login.Designer.vb">
+      <DependentUpon>frm_login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="capa de formularios\frm_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capa de formularios\egresos\frm_otropago.Designer.vb">
+      <DependentUpon>frm_otropago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="capa de formularios\egresos\frm_otropago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capa de formularios\frm_persona.Designer.vb">
+      <DependentUpon>frm_persona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="capa de formularios\frm_persona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capa de formularios\frm_reporte.Designer.vb">
+      <DependentUpon>frm_reporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="capa de formularios\frm_reporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capa de formularios\frm_vistaprevia.Designer.vb">
+      <DependentUpon>frm_vistaprevia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="capa de formularios\frm_vistaprevia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capa de formularios\frm_vencidos.Designer.vb">
+      <DependentUpon>frm_vencidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="capa de formularios\frm_vencidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capa de formularios\egresos\frm_planilla.Designer.vb">
+      <DependentUpon>frm_planilla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="capa de formularios\egresos\frm_planilla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="reportes\rptfacturacion.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptfacturacion.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rptingresos.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptingresos.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rptreport.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptreport.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rptreport_fecha.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptreport_fecha.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rptservicios_fecha.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptservicios_fecha.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_facturacion.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_facturacion.rpt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="capa de formularios\ayuda\frm_acercade.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_acercade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capa de formularios\Cronogramas\frm_croeneelectrica.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_croeneelectrica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capa de formularios\Cronogramas\frm_cromantenimiento.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_cromantenimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capa de formularios\Cronogramas\frm_cromerconductiva.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_cromerconductiva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capa de formularios\editores\frm_loccontrato.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_loccontrato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capa de formularios\egresos\frm_compras.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_compras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capa de formularios\egresos\frm_entregaokanito.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_entregaokanito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capa de formularios\egresos\frm_servicio.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_servicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capa de formularios\egresos\frm_tributos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_tributos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capa de formularios\Form2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capa de formularios\egresos\frm_contratista.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_contratista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capa de formularios\frm_inicio.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capa de formularios\frm_interfecha.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_interfecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capa de formularios\frm_login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capa de formularios\egresos\frm_otropago.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_otropago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capa de formularios\frm_persona.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_persona.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capa de formularios\frm_reporte.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_reporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capa de formularios\frm_vistaprevia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_vistaprevia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capa de formularios\frm_vencidos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_vencidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capa de formularios\egresos\frm_planilla.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_planilla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rptfacturacion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptfacturacion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rptingresos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptingresos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rptreport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptreport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rptreport_fecha.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptreport_fecha.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rptservicios_fecha.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptservicios_fecha.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_facturacion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_facturacion.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\apariencia\apariencia.vbproj">
+      <Project>{BBD3499A-78DE-42F9-99E8-FFF54D112E83}</Project>
+      <Name>apariencia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\fungal\fungal.vbproj">
+      <Project>{5861D2CB-4E25-44B6-B4A4-10DCB8F5E3F9}</Project>
+      <Name>fungal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drivemount-applet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnome-searchtool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disque embudo.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAG05B.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnome-home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\activo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presionado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnactivo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ojo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.1.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32px-Crystal_Clear_action_apply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32px-Crystal_Clear_action_button_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32px-Crystal_Clear_action_edit_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32px-Crystal_Clear_action_edit_remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\120px-Crystal_128_reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal_postscript.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\120px-128px-Nuvola_man_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\120px-Nuvola_apps_kdmconfig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\120px-Nuvola_apps_edu_languages.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\120px-Contact-new.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\120px-User_icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\135429.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_galman.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vista %28299%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

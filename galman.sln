@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "galman", "Galman\galman.vbproj", "{C6D3DB89-72F1-4134-BCA2-1FF6799DC268}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "apariencia", "apariencia\apariencia.vbproj", "{BBD3499A-78DE-42F9-99E8-FFF54D112E83}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "fungal", "fungal\fungal.vbproj", "{5861D2CB-4E25-44B6-B4A4-10DCB8F5E3F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6D3DB89-72F1-4134-BCA2-1FF6799DC268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6D3DB89-72F1-4134-BCA2-1FF6799DC268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6D3DB89-72F1-4134-BCA2-1FF6799DC268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6D3DB89-72F1-4134-BCA2-1FF6799DC268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBD3499A-78DE-42F9-99E8-FFF54D112E83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBD3499A-78DE-42F9-99E8-FFF54D112E83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBD3499A-78DE-42F9-99E8-FFF54D112E83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBD3499A-78DE-42F9-99E8-FFF54D112E83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5861D2CB-4E25-44B6-B4A4-10DCB8F5E3F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5861D2CB-4E25-44B6-B4A4-10DCB8F5E3F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5861D2CB-4E25-44B6-B4A4-10DCB8F5E3F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5861D2CB-4E25-44B6-B4A4-10DCB8F5E3F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
